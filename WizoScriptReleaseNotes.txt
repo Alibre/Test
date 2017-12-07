@@ -1,6 +1,6 @@
 WIZOSCRIPT RELEASE NOTES
 (C) BRITISHIDEAS 2013-2017
-ALL RIGHTS RESERVED
+ALL RIGHTS RESERVED...
 
 This document describes the changes between versions of WizoScript and any known issues.
 
