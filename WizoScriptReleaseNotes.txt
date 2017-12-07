@@ -1,0 +1,379 @@
+WIZOSCRIPT RELEASE NOTES
+(C) BRITISHIDEAS 2013-2017
+ALL RIGHTS RESERVED
+
+This document describes the changes between versions of WizoScript and any known issues.
+
+For the latest news on WizoScript visit the WizoTools web site at: www.wizotools.com
+
+
+Version 4.35
+------------
+
+- Now shows correct selection name for items selected as a result of creating holes in an assembly.
+
+- Added support for determining if planes and faces are parallel.
+
+- Added support for getting distance between parallel faces.
+
+
+Version 4.30
+------------
+
+- Updated to IronPython 2.7.7.
+
+- Added support for protected scripts.
+
+
+Version 4.25
+------------
+
+- Fixed bug that caused selection process to be slow for vertices, edges and faces if there was a large amount of vertices, edges or faces.
+
+- Script-created dialog windows are now always on top.
+
+- UtilityDialog windows can now be minimized.
+
+
+Version 4.20
+------------
+
+- Added support for changing the contents of drop-down lists after dialogs have been created.
+
+- Fixed bugs that stopped UtilityDialog input changed function from being called for some input types.
+
+- Fixed bug that stopped labels and hyperlinks from spanning the width of dialogs.
+
+- Added Assembly.SaveAll() to save assembly and all parts to a new location.
+
+- Added ability to specify a default value for drop-down lists in dialogs.
+
+- Added some functions to simplify adding sub-assemblies and parts to assemblies.
+
+
+Version 4.10
+------------
+
+- Added support for hyperlinks in dialog windows.
+
+
+Version 4.05
+------------
+
+- Added ability to generate unique sub-assembly/part names for an assembly.
+
+- Attempt to work around selection problem in Alibre Design API.
+
+
+Version 4.01
+------------
+
+- Fixed bug that caused error in UtilityDialog input changed callback if it relied on a selection input field that was empty.
+
+
+Version 4.00
+------------
+
+- Added UtilityDialog.
+
+- Added drop-down lists to dialog windows.
+
+- Added global variables ScriptFolder, ScriptFileName and WizoScriptVersion.
+
+- Improved support for selecting items in dialog windows.
+
+- Improved support for saving and loading files in dialog windows.
+
+- Added option to save files in dialog windows.
+
+- Added ability to get coordinates for vertices.
+
+- Added support for images in dialog windows.
+
+- Added ability to get diameter of circular edges.
+
+- Added language-independent access to default reference geometry.
+
+- Minor tweaks and improvements.
+
+
+Version 3.51
+------------
+
+- Fixed bug that stopped parts being added to an assembly after a sub-assembly had been added.
+
+
+Version 3.50
+------------
+
+- Added support for Alibre Design 2017.1.
+
+- Added support for creating assemblies.
+
+- Added support for moving and rotating parts in assemblies.
+
+- Added add-on to Alibre Design for quick access.
+
+- Added support for creating assembly constraints.
+
+- Added support for getting part and assembly file paths and names.
+
+
+Version 3.05
+------------
+
+- Added Part functions to scale the part.
+
+
+Version 3.03
+------------
+
+- Fixed bug that caused angle parameter values to be corrupted the first time set to a specific value.
+
+
+Version 3.02
+------------
+
+- Fixed bug that stopped options dialog part selections from being made after running a script with GD V18.
+
+
+Version 3.00
+------------
+
+- Added support for interactive selection of design and reference items.
+
+- Trying to open an already open part now returns the already opened part.
+
+- No longer crashes if Geomagic Design is closed while accessing the API.
+
+- Added GetCoordinates function to Point objects.
+
+- Added GetPart function to most design and references items.
+
+- Added IsOpen function to Part objects.
+
+- Options dialog now opened centered on WizoScript form and remembers last location.
+
+- Added ability to prompt user to choose files in options dialog.
+
+- Replaced Plane.Part property with Plane.GetPart function for consistency. Warning: this change is not backwards compatible.
+
+
+Version 2.66
+------------
+
+-Fixed bug that stopped scale and ratio parameters from being added to parts and global parameters.
+
+
+Version 2.65
+------------
+
+- Added info, error and question dialog windows.
+
+
+Version 2.60
+------------
+
+- Supports Geomagic Design V18 (2015.1.0).
+
+
+Version 2.51
+------------
+
+- Fixed bug that stopped checkboxes from autosizing.
+
+
+Version 2.50
+------------
+
+- Added support for creating custom Windows to prompt user for values.
+
+- Added support for importing files.
+
+
+Version 2.01
+------------
+
+- Bug fix.
+
+
+Version 2.00
+------------
+
+- Improved sys.exit handling.
+
+- Added support for global parameters.
+
+- Added thumbnail generation.
+
+
+Version 1.99
+------------
+
+- Improved parameter support, units can now be specified.
+
+- Added support for creating file open and save dialog windows.
+
+
+Version 1.95
+------------
+
+- Supports Geomagic Design V17.
+
+- Additional command line options to run a script and then close.
+
+- Support for assemblies.
+
+- Python library paths bug fix.
+
+- Added support for comments on parameters.
+
+- Added support for getting the bounding box of parts.
+
+- Minor bug fixes and improvements.
+
+
+Version 1.90
+------------
+
+- Added support for adding arcs to 3D sketches.
+
+- 3D splines now require a minimum of two points instead of four.
+
+
+Version 1.86
+------------
+
+- Internal improvements.
+
+
+Version 1.85
+------------
+
+- Can now create planes using a point and a normal.
+
+- Added support for projecting 3D points to sketches and converting sketch points to 3D points.
+
+- Moved LockTypes enumeration to top level.
+
+
+Version 1.80
+------------
+
+- Added support for suppressing and unsuppressing features.
+
+- Added support for removing features and sketches.
+
+- Documentation bug fix.
+
+- Improved handling when creating a part object from an existing file.
+
+
+Version 1.76
+------------
+
+- Improvements to configurations support.
+
+
+Version 1.75
+------------
+
+- Added support for configurations.
+
+- Fixed bug that stopped openpyxl from working.
+
+
+Version 1.70
+------------
+
+- Added support for lofting.
+
+
+Version 1.60
+------------
+
+- Added support for reading and writing parameters.
+
+- Added support for reading and writing part description and number.
+
+- Added export to STEP.
+
+
+Version 1.50
+------------
+
+- Copy and paste now supported in console.
+
+- Backspace now supported in Read() function.
+
+- Added SymPy symbolic computation library.
+
+- Added openpyxl, xlrd/xlwr libraries for reading and writing Excel spreadsheets.
+
+- Proper error reporting for commands entered into the console.
+
+- Unicode support in the console.
+
+- Updated to Geomagic Design v16 support.
+
+- Bug fixes and minor improvements.
+
+
+Version 1.42
+------------
+
+- Added Sketch.AddBsplineThroughPoints.
+
+
+Version 1.41
+------------
+
+- Better separation of console environment from scripts and script execution environment from previous script execution.
+
+
+Version 1.40
+------------
+
+- Added support for 3D sketch creation.
+
+- Minor bug fixes.
+
+- Added Python 2.7 standard library.
+
+
+Version 1.36
+------------
+
+- Added help section to toolbar.
+
+- Added link to website on Help menu.
+
+
+Version 1.35
+------------
+
+- Fixed bug that stopped New Script from working once a script had been saved.
+
+- Added support for double-clicking on script files to open WizoScript.
+
+
+Version 1.30
+------------
+
+- Fixed limitation that stopped gears with more than 165 teeth from being generated.
+
+- Added new function to add lines to sketches.
+
+- Added new functions to generate single gear teeth.
+
+
+Version 1.22
+------------
+
+- First public release.
+
+
+Known Issues
+------------
+
+- No known issues
